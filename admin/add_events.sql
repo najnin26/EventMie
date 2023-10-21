@@ -1,0 +1,5 @@
+CREATE TABLE events (
+  event_id INT AUTO_INCREMENT PRIMARY KEY,
+  event_name VARCHAR(100) NOT NULL,
+  event_image VARCHAR(255) NOT NULL
+);

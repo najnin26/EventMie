@@ -1,0 +1,133 @@
+.navbar {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    top:0;
+    right: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar li {
+    margin: 0 10px;
+  }
+  
+  .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    
+  }
+  
+  .navbar li.dropdown ul {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #555;
+    border-radius: 5px;
+   
+  }
+  
+  .navbar li.dropdown:hover ul {
+    display: block;
+  }
+  
+  .navbar li.dropdown ul li {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  
+  .navbar li.dropdown ul li:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .navbar li.dropdown:hover > a {
+    background-color: #555;
+  }
+  
+  .navbar li.active a {
+    background-color: #555;
+  }
+  
+  .navbar li a:hover {
+    background-color: #555;
+  }
+  .dropdown-separator {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 70%;
+    background-color: #ccc;
+  }
+  
+  .dropdown-separator:hover {
+    background-color: #fff;
+  }
+  
+  .dropdown-separator:first-child {
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  .dropdown-separator:last-child {
+    right: 50%;
+    margin-right: -1px;
+  }
+
+  .theme-toggler{
+    position: fixed;
+    top:10rem; right:-20rem;
+    background: #333;
+    z-index: 1000;
+    width: 20rem;
+    text-align: center;
+}
+
+.theme-toggler.active{
+    right:0;
+}
+
+.theme-toggler h3{
+    color:#fff;
+    padding:1rem 0;
+    font-size: 2rem;
+}
+
+.theme-toggler .buttons{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding:1rem;
+}
+
+.theme-toggler .buttons .theme-btn{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn{
+    position: absolute;
+    top:0; left:-5.9rem;
+    padding:1.3rem 1.5rem;
+    background:#333;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i{
+    color:#fff;
+    font-size: 3rem;
+    animation: spin 4s linear infinite;
+}
+
+  

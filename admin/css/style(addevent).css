@@ -1,0 +1,221 @@
+/* Form card styles */
+.container-a {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .form-container-a {
+    flex: 1;
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+  
+  .table-container-a {
+    flex: 1;
+    padding-left: 20px;
+    margin-left: 20px;
+  }
+  
+  .form-card-a {
+    background-color: #263043;
+    color: #ffffff;
+    width: 400px;
+    padding: 30px;
+    padding-top: 20px;
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(249, 245, 245, 0.2);
+    margin-bottom: 50px;
+  }
+  
+  .form-heading-a {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .form-group-a {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    color: #ffffff;
+  }
+  
+  input[type="text"],
+  input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Button styles */
+  .submit-button-a {
+    background-color: #fafafb;
+    color: #0e0d0d;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button-a:hover {
+    background-color: #ff0000;
+    color: #fafafb; /* Red color */
+  }
+  .form-heading-a{
+    color: #ffffff;
+  }
+  .event-table-a {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .event-table-a th,
+  .event-table-a td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+    position:relative;
+  }
+  
+  .event-table-a td:not(:last-child) {
+    padding-right: 20px;
+  }
+  
+  .event-table-a td:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 2px;
+    background-color: #ffffff;
+  }
+  
+  .event-table-a th {
+    font-weight: 600;
+  }
+  
+  .event-table-a td img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .table-container-a {
+  background-color: #263043;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(247, 246, 246, 0.2);
+  margin-bottom: 50px;
+  width: 100%;
+  max-width: 800px;
+  }
+  .edit-button,.delete-button-a {
+    background-color: #fafafb;
+    color: #0e0d0d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .edit-button:hover ,.delete-button-a:hover {
+    background-color: #cc0000;
+    color: #fafafb; /* Darker red color on hover */
+  }
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+/* CSS for Edit Event Page */
+
+.edit-event-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #263043;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+  
+  .edit-event-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fafafb;
+  }
+  
+  .edit-event-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .edit-event-container .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .edit-event-container label {
+    font-weight: bold;
+  }
+  
+  .edit-event-container input[type="text"],
+  .edit-event-container input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fdfbfb;
+    border-radius: 4px;
+  }
+  
+  .edit-event-container button[type="submit"] {
+    background-color: #f1f4f1;
+    color: rgb(10, 10, 10);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .edit-event-container button[type="submit"]:hover {
+    background-color: #f92109;
+    color:white;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .container-a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .form-card-a {
+      margin-bottom: 20px;
+    }
+
+    .event-table-a {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .form-group-a {
+      margin-bottom: 10px;
+    }
+
+    .submit-button-a {
+      margin-top: 10px;
+    }
+  }
+  
+  
